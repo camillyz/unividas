@@ -1,0 +1,191 @@
+.mvv {
+  background: #f9f6f0; /* mesma cor do fundo */
+  padding: 50px 16px 70px;
+}
+
+.mvv-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.mvv-titulo {
+  font-size: clamp(26px, 3vw, 40px);
+  margin-bottom: 28px;
+  color: #746558;
+}
+
+.mvv-item {
+  margin-bottom: 26px;
+}
+
+.mvv-item h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  
+}
+
+.mvv-item ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #7f674d;
+}
+
+.mvv-item li {
+  line-height: 1.6;
+  opacity: 0.85;
+}
+.ia{
+  color: #746558;
+}
+.especialistas-titulo{
+color: #746558;
+}
+
+/* Desktop: dá mais respiro */
+@media (min-width: 900px) {
+  .mvv {
+    padding: 70px 16px 90px;
+  }
+}
+
+
+.hero-interno{
+  position: relative;
+  width: 100%;
+  min-height: clamp(240px, 38vw, 420px);
+  background-image: url("img/logo/sobre1.jpeg"); /* troque aqui */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-overlay{
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0.25),
+    rgba(0,0,0,0.10)
+  );
+}
+
+.hero-titulo{
+  margin: 0;
+  color: #fff;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 700;
+  text-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+/* Onda/curva na parte de baixo */
+.hero-wave{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px; /* evita filete */
+  height: 110px;
+  overflow: hidden;
+}
+
+.hero-wave svg{
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.hero-wave path{
+  fill: #f3f1ea; /* cor do fundo do conteúdo (bege) */
+}
+
+/* Conteúdo abaixo */
+.conteudo{
+  background: #f3f1ea; /* mesma cor da onda */
+  padding: 40px 16px 60px;
+}
+
+.conteudo .breadcrumb{
+  max-width: 980px;
+  margin: 0 auto 14px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.conteudo h2, .conteudo p{
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.conteudo h2{
+  margin-bottom: 10px;
+  font-size: clamp(26px, 3vw, 40px);
+}
+
+.especialistas {
+  background: #f3f1ea;
+  padding: 50px 16px 80px;
+}
+
+.especialistas-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.especialistas-titulo {
+  font-size: clamp(26px, 3vw, 40px);
+  margin-bottom: 32px;
+}
+
+/* Grid */
+.especialistas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.especialista-card {
+  background: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 22px rgba(0,0,0,0.08);
+  padding-bottom: 16px;
+}
+
+/* Foto */
+.especialista-card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+}
+
+/* Nome */
+.especialista-card h3 {
+  margin: 14px 8px 4px;
+  font-size: 18px;
+}
+
+/* Função */
+.especialista-card p {
+  margin: 0 8px;
+  font-size: 15px;
+  opacity: 0.8;
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+  .especialistas-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .especialistas-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
